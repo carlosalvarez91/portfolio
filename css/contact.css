@@ -294,7 +294,7 @@ label:hover {
   background: #ffffff !important;
   height: auto;
   margin: 70px auto;
-  max-width: 70%;
+  max-width: 54%;
   overflow: hidden !important;
   width: 100%;
   -moz-border-radius: 5px;
@@ -415,6 +415,7 @@ label:hover {
 .contact-form .submit .user-message {
   float: left !important;
   padding-top: 22px !important;
+  color:#646464;
 }
 
 @media (max-width: 500px) {

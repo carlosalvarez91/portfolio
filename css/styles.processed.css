@@ -789,7 +789,7 @@ nav a {
 }
 
 .site-header {
-  background-color: #8fbbbd;
+  background-color: #2b2b2b;
   color: #994c30;
   display: -ms-flexbox;
   display: flex;
@@ -852,7 +852,7 @@ nav a {
 
 @media (min-width: 43.75em) {
   .site-header {
-    background: linear-gradient(to right, #8fbbbd 50%, peachpuff 50%);
+    background: linear-gradient(to right, #2b2b2b 50%, #2b2b2b 50%);
   }
 }
 
@@ -890,7 +890,7 @@ nav a {
 }
 
 #main {
-  color: #436f70;
+  color: #ffff;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -929,7 +929,7 @@ nav a {
 }
 
 .content-panel {
-  background-color: #8fbbbd;
+  background-color: #2b2b2b;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -954,8 +954,8 @@ nav a {
 }
 
 .media-panel {
-  background-color: peachpuff;
-  color: #a68e78;
+  background-color: #2b2b2b;
+  color: #2b2b2b;
   -ms-flex-direction: column;
   flex-direction: column;
   padding-top: 2vh;
@@ -964,6 +964,7 @@ nav a {
 
 .media-panel h2 {
   margin-bottom: 25px;
+  color:#ffff;
 }
 
 .content-panel .slug:container("width >= 500px") {
@@ -972,14 +973,7 @@ nav a {
 }
 
 .content-panel .slug:container("width >= 500px") figure {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 1.75rem;
-  margin-bottom: 0;
-  margin-left: 0;
+ margin: 0 auto;
 }
 
 .content-panel .slug:container("width >= 500px") h2 {
@@ -998,7 +992,7 @@ nav a {
 }
 
 .site-footer {
-  background-color: peachpuff;
+  background-color: #2b2b2b;
   color: #a68e78;
   display: -ms-flexbox;
   display: flex;
@@ -1041,7 +1035,7 @@ nav a {
 
 @media (min-width: 43.75em) {
   .site-footer {
-    background: linear-gradient(to right, #8fbbbd 50%, peachpuff 50%);
+    background: linear-gradient(to right, #2b2b2b 50%, #2b2b2b 50%);
   }
   .site-footer h4 {
     background-color: #a68e78;
@@ -1345,7 +1339,7 @@ nav a {
 .slug .text-wrap ul{
   color: rgb(221, 220, 220);
   font-size: 0.55em;
-  list-style-type: square;
+  list-style-type: none;
   -ms-flex-negative: 1;
   flex-shrink: 1;
   text-align: left;
@@ -1395,7 +1389,7 @@ nav a {
   text-decoration: none;
   text-align: center;
   font-family: Arial, Helvetica,sans-serif;
-  color: white;
+  color: #2b2b2b;
 }
 
 .slug .contact-button:hover,

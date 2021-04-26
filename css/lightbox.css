@@ -74,6 +74,7 @@
   }
   .lightbox .header {
     padding-bottom: 10px;
+    border-bottom:1px solid #2b2b2b;
   }
   .lightbox .footer {
     padding-top: 20px;
@@ -83,6 +84,7 @@
         -ms-flex-positive: 1;
             flex-grow: 1;
     overflow: scroll;
+    padding-top:20px;
   }
   .lightbox .main p{
     font-size: .7em;
