@@ -69,3 +69,47 @@ body {
   background: url('http://nl.pcmweb.s3-eu-west-1.amazonaws.com/thumbnails/980/4fc56/GTA-V-Image.jpg');
   background-size: cover;
 }
+
+.project-image{
+  margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close-button{
+  font-size: 33px !important;
+  margin-bottom: 5px;
+}
+
+.project-button{
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  line-height: 1.5;
+  position: relative;
+    vertical-align: top;
+}
+.project-button i {
+  color:#3298dc!important;
+
+  margin-right: .25em;
+}

@@ -6,7 +6,7 @@
   <title>Carlos Alvarez</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.processed.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/projects.css">
   <link rel="stylesheet" type="text/css" href="css/list.css">
   <link rel="stylesheet" type="text/css" href="css/lightbox.css">
@@ -109,334 +109,146 @@
         <div class="media-grid">
             <!--rolldown list https://codepen.io/peterhry/pen/CutrA-->
             <ul class="rolldown-list" id="myList">
+              
+              <label for="lightbox-0">
                 <li>
-                  <label for="lightbox-0">Servook 
+                  Servook 
                     <span class="projects-icons-container">
                       <img class="project-icon" src="images/react.svg">
-                      <img class="project-icon" src="images/apollo.png">
                       <img class="project-icon" src="images/graphql.png">
                       <img class="project-icon" src="images/django.png">
                       <img class="project-icon" src="images/postgres.png">
                       <img class="project-icon" src="images/aws.png">
-                      <img class="project-icon" src="images/firebase.png">
-                      <img class="project-icon" src="images/nginx.png">
-                      
                     </span>
-                  </label>
                 </li>
+              </label>
+              <label for="lightbox-1">
                 <li>
-                  <label for="lightbox-1">Hostel PMS 
+                  Hostel PMS 
                     <span class="projects-icons-container">
                       <img class="project-icon" src="images/electorn-logo-2.png">
                       <img class="project-icon" src="images/sqlite.png">
                     </span>
-                  </label>
                 </li>
+              </label>
                 <!--<li><label for="lightbox-2">Github jobs searcher <span class="projects-icons-container"><img class="project-icon" src="images/aurelia.png"><img class="project-icon" src="images/materialize.png"></span></label></li>
                 <li><label for="lightbox-3">Google images searcher<span class="projects-icons-container"><img class="project-icon" src="images/python.png"></span></label></li>-->
+              <label for="lightbox-4">
                 <li>
-                  <label for="lightbox-4">Babylon 
+                  Babylon 
                     <span class="projects-icons-container">
                       <img class="project-icon" src="images/mongo.png">
                       <img class="project-icon" src="images/express.png">
                       <img class="project-icon" src="images/pug.png">
                       <img class="project-icon" src="images/sass.svg">
                     </span>
-                  </label>
                 </li>
+              </label>
                 <!--<li><label for="lightbox-5">React twitter clone <span class="projects-icons-container"><img class="project-icon" src="images/react.svg"><img class="project-icon" src="images/firebase.png"></span></label></li>
                 <li><label for="lightbox-6">My Passwords <span class="projects-icons-container"><img class="project-icon" src="images/mongo.png"><img class="project-icon" src="images/express.png"><img class="project-icon" src="images/angular-icon-1.svg"><img class="project-icon" src="images/node.png"></span></label></li>-->
+              <label for="lightbox-7"> 
                 <li>
-                  <label for="lightbox-7">Transport payment mobile App 
+                  Commuter
                     <span class="projects-icons-container">
                     <img class="project-icon" src="images/loopback.png">
                     <img class="project-icon" src="images/ionic.png">
                     <img class="project-icon" src="images/arduino.png">
                     </span>
-                  </label>
+                  
                 </li>
+              </label>
+              <label for="lightbox-8">
                 <li>
-                  <label for="lightbox-8">Socket IO chat
+                  Socket IO chat
                     <span class="projects-icons-container">
                       <img class="project-icon" src="images/express.png">
                       <img class="project-icon" src="images/socketio.svg">
                     </span>
-                  </label>
                 </li>
+              </label>
 
             </ul>
             <!--lightboxes https://codepen.io/marionebl/pen/fensm-->
             <!--Project 0-->
             <aside class="lightbox">
                     <input type="checkbox" class="state" id="lightbox-0" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">Servook</h3>
-                        <label class="close-button" for="lightbox-0">&times;</label>
-                      </header>
-                      <main class="main">
-                         <!-- <img src="images/app.servook.com_.png" width="100%" height="auto">-->
-                        <h3>Description:</h3>
-                        <p>
-                          A platform for booking professionals in your area
-                        </p>
-                        <h3>Technologies:</h3>
-                        <p>
-                          React, Apollo, GraphQL, Django, Graphene, Postgres, Celery, AWS SES (email) and S3 (storage), Firebase Cloud Messages, WebSockets, Nginx, Supervisor, Daphne.
-                        </p>
-                        <h3>Links:</h3>
-                        <p><a href="https://servook.com" target="_blank">Deployed</a></p>
-                      </main>
-                      <!--<footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>                               
-                      </footer>-->
+                    <article class="content" style="overflow-y: scroll;">
+                      <project-component
+                      name="Servook"
+                      img="images/app.servook.com_.png"
+                      technologies="React, Apollo, GraphQL, Django, Graphene, Postgres, Celery, AWS SES (email) and S3 (storage), Firebase Cloud Messages, WebSockets, Nginx, Supervisor, Daphne."
+                      description="A platform for booking professionals in your area"
+                      deployed="https://app.servook.com"
+                      repo=""
+                      id="lightbox-0"
+                      ></project-component>
                     </article>
                     <label class="backdrop" for="lightbox-0"></label>
             </aside>
 
             <!--Project 1-->
             <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-1" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">Hostel Property Managment system</h3>
-                        <label class="close-button" for="lightbox-1">&times;</label>
-                      </header>
-                      <main class="main">
-                          <img src="images/checkin_electron.jpeg" width="100%" height="auto">
-                        <h3>Description:</h3>
-                        <p>
-                         A desktop application built in Electron to manage and print the receipts for Backpackers Citi Hostel Dublin.
-                        </p>
-                        <h3>Technologies:</h3>
-                        <p>
-                          Electron, SQLite
-                        </p>
-                        <h3>Links:</h3>
-                        <p><a href="https://github.com/carlosalvarez91/electron-hostel-app"  target="_blank">Github</a></p>
-                      </main>
-                      <!--<footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>                               
-                      </footer>-->
+                <input type="checkbox" class="state" id="lightbox-1" />
+                    <article class="content" style="overflow-y: scroll;">
+                        <project-component
+                        name="Hostel Property Managment system"
+                        img="images/checkin_electron.jpeg"
+                        technologies="Electron, SQLite"
+                        description="A desktop application built in Electron to manage and print the receipts for Backpackers Citi Hostel Dublin."
+                        deployed=""
+                        repo="https://github.com/carlosalvarez91/electron-hostel-app"
+                        id="lightbox-1"
+                        ></project-component>
                     </article>
-                    <label class="backdrop" for="lightbox-1"></label>
+                <label class="backdrop" for="lightbox-1"></label>
             </aside>
-            <!--Project 2
-            <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-2" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">Github jobs searcher</h3>
-                        <label class="close-button" for="lightbox-2">&times;</label>
-                      </header>
-                      <main class="main">
-                        <img src="images/aurelia_searcher.jpeg" width="100%" height="auto">
-                        <h3>Description:</h3>
-                        <p>
-                        Query the Github Jobs JSON API, show results in a list, list liked jobs and delete unliked jobs from that list stored at the LocalStorage.
-                        </p>
-                        <h3>Technologies:</h3>
-                        <p>
-                        Aurelia.io, Materialize.css
-                        </p>
-                        <h3>Links:</h3>
-                        <p><a href="https://github.com/carlosalvarez91/github-jobs-searcher"  target="_blank">Github</a></p>
-                        <p><a href="http://github-jobs-searcher.surge.sh/"  target="_blank">Deployed</a></p>
-                      </main>
-                      <footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>                            
-                      </footer>
-                    </article>
-                    <label class="backdrop" for="lightbox-2"></label>
-            </aside>-->
-            <!--Project 3
-            <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-3" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">Google Images Searcher</h3>
-                        <label class="close-button" for="lightbox-3">&times;</label>
-                      </header>
-                      <main class="main">
-                       
-                        <h3>Description:</h3>
-                        <p>
-                        The query to search is 'color name selected by the user' + 'random word from Array of words'.
-                        </p>
-                        <h3>Technologies:</h3>
-                        <p>
-                        Flask (Python 3)
-                        </p>
-                        <h3>Links:</h3>
-                        <p><a href="https://github.com/carlosalvarez91/flask-searcher-exercise" target="_blank">Github</a></p>
-                      </main>
-                      <footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>                            
-                      </footer>
-                    </article>
-                    <label class="backdrop" for="lightbox-3"></label>
-            </aside>-->
+
             <!--Project 4-->
             <aside class="lightbox">
                     <input type="checkbox" class="state" id="lightbox-4" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">Babylon</h3>
-                        <label class="close-button" for="lightbox-4">&times;</label>
-                      </header>
-                      <main class="main">
-                        <img src="images/babylon_UI.jpeg" width="100%" height="auto">
-                            <h3>Description:</h3>
-                            <p>
-                                Babylon is a platform to find information about 'places to go' or classifieds or events at any city in the world.
-                            </p>
-                            <h3>Technologies:</h3>
-                            <p>
-                              KeystoneJS: MongoDB, ExpressJS, Pug, Sass
-                            </p>
-                            <h3>Links:</h3>
-                            <p><a href="https://github.com/babylondublin/Babylon2" target="_blank">Github</a></p>
-                            <p><a href="https://babylon-dev.herokuapp.com" target="_blank">Deployed</a></p>
-                      </main>
-                      <!--<footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>                            
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                      </footer>-->
+                    <article class="content" style="overflow-y: scroll;">
+                        <project-component
+                        name="Babylon"
+                        img="images/babylon_UI.jpeg"
+                        technologies="KeystoneJS (CMS) built on top of ExpressJS, MongoDB, Pug, Sass"
+                        description="Babylon is a platform for finding information about 'places to go' or classifieds or events at any city in the world."
+                        deployed="https://babylon-dev.herokuapp.com"
+                        repo="https://github.com/babylondublin/Babylon2"
+                        id="lightbox-4"
+                        ></project-component>
                     </article>
                     <label class="backdrop" for="lightbox-4"></label>
             </aside>
-            <!--Project 5
-            <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-5" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">React twitter clone</h3>
-                        <label class="close-button" for="lightbox-5">&times;</label>
-                      </header>
-                      <main class="main">
-                      <img src="images/twitter-clone.jpeg" width="100%">
-                        <h3>Description:</h3>
-                        <p>
-                            Twitter clone built in React and Firebase. Facebook authentication
-                        </p>
-                        <h3>Technologies:</h3>
-                        <p>
-                        React and Firebase
-                        </p>
-                        <h3>Links:</h3>
-                        <p><a href="https://github.com/carlosalvarez91/react-twitter-clone" target="_blank">Github</a></p>
-                        <p><a href="https://twitter-clone-fc841.firebaseapp.com/#/" target="_blank">Deployed</a></p>
-                      </main>
-                      <footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>  
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>                               
-                      </footer>
-                    </article>
-                    <label class="backdrop" for="lightbox-5"></label>
-            </aside>-->
-            <!--Project 6
-            <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-6" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">My Passwords</h3>
-                        <label class="close-button" for="lightbox-6">&times;</label>
-                      </header>
-                      <main class="main">
-                            <img src="images/mypass.jpg" width="100%" height="auto">
-                              <h3>Description:</h3>
-                              <p>
-                                Web application for storing passwords built in MEAN Stack. It includes a register, a login based in JSON Web Token and a REST API to Post Get Update and Delete the passwords.
-                              </p>
-                              <h3>Technologies:</h3>
-                              <p>
-                              MongoDB, Express, Angular 2, NodeJS
-                              </p>
-                              <h3>Links:</h3>
-                              <p><a href="https://github.com/carlosalvarez91/myTaskList/tree/passwordsList" target="_blank">Github</a></p>
-                            </main>
-                      <footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                      </footer>
-                    </article>
-                    <label class="backdrop" for="lightbox-6"></label>
-            </aside>-->
+  
             <!--Project 7-->
             <aside class="lightbox">
                     <input type="checkbox" class="state" id="lightbox-7" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">Transport payment mobile App</h3>
-                        <label class="close-button" for="lightbox-7">&times;</label>
-                      </header>
-                      <main class="main">
-                          <img src="images/commuter_UI.png" width="auto" height="300px" style="margin-left:30%;">                          
-                              <h3>Description:</h3>
-                              <p>
-                                Mobile payment application for the transport using NFC. Built in Ionic Framework (AngularJS), Loopback (NodeJS) as a Back-end and Arduino as a simulation of Transport payment machine.
-                              </p>
-                              <h3>Technologies:</h3>
-                              <p>
-                              Loopback, Ionic Framework
-                              </p>
-                              <h3>Links:</h3>
-                              <p><a href="https://github.com/carlosalvarez91/Commuter" target="_blank">Github</a></p>
-                        </main>
-                      <!--<footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                      </footer>-->
+                    <article class="content" style="overflow-y: scroll;">
+                        <project-component
+                        name="Commuter"
+                        img="images/commuter_UI.png"
+                        technologies="Loopback, Ionic, Arduino"
+                        description="Mobile payment application for the transport using NFC. Built in Ionic Framework (AngularJS), Loopback (NodeJS) as a Back-end and Arduino as a simulation of Transport payment machine."
+                        deployed=""
+                        repo="https://github.com/carlosalvarez91/Commuter"
+                        id="lightbox-7"
+                        ></project-component>
                     </article>
                     <label class="backdrop" for="lightbox-7"></label>
             </aside>
             <!--Project 9-->
             <aside class="lightbox">
                     <input type="checkbox" class="state" id="lightbox-8" />
-                    <article class="content">
-                      <header class="header">
-                        <h3 class="h h3">Socket IO Chat</h3>
-                        <label class="close-button" for="lightbox-8">&times;</label>
-                      </header>
-                      <main class="main">
-                          <!--<img src="images/commuter_UI.png" width="auto" height="300px" style="margin-left:30%;">-->                        
-                              <h3>Description:</h3>
-                              <p>
-                              A simple chat
-                              </p>
-                              <h3>Technologies:</h3>
-                              <p>
-                              Express, Socket IO, Jquery
-                              </p>
-                              <h3>Links:</h3>
-                              <p><a href="https://github.com/carlosalvarez91/Socket-Web-Chat-App" target="_blank">Github</a></p>
-                              <p><a href="https://hidden-dusk-75892.herokuapp.com/" target="_blank">Deployed</a></p>
-                        </main>
-                      <!--<footer class="footer">
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <i class="fa fa-coffee" aria-hidden="true"></i>
-                      </footer>-->
+                    <article class="content" style="overflow-y: scroll;">
+                        <project-component
+                        name="Socket IO Chat"
+                        img="images/IO_chat.png"
+                        technologies="Express, Socket IO, Jquery"
+                        description="A simple chat using WebSockets"
+                        deployed="https://hidden-dusk-75892.herokuapp.com/"
+                        repo="https://github.com/carlosalvarez91/Socket-Web-Chat-App"
+                        id="lightbox-8"
+                        ></project-component>
                     </article>
                     <label class="backdrop" for="lightbox-7"></label>
             </aside>
@@ -451,16 +263,16 @@
       <div class="footer-left">
         <!--<p>&copy; <span>&nbsp; Carlos Alvarez 2017</span></p>-->
         <ul class="footer-nav">
-          <li><a href="https://www.linkedin.com/in/carlos-alvarez91/" target="_blank"><i class="fa fa-linkedin social-icons" aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/carlosalvarez91" target="_blank"><i class="fa fa-github social-icons" aria-hidden="true"></i></a></li>
-          <li><a href="https://codepen.io/carlosalvarez91/" target="_blank"><i class="fa fa-codepen social-icons" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/carlos-alvarez91/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/carlosalvarez91" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://codepen.io/carlosalvarez91/" target="_blank"><i class="fab fa-codepen"></i></a></li>
         </ul>
       </div>
     </footer>
     <div class="skills-section">
         <div class="about-myself">
             <div class="content-skills">
-                  <h2 style="text-align:center; font-family:'Open Sans', sans-serif; font-weight: lighter; line-height: 120%;" class="aboutTitleVisible">Technologies</h2>
+                  <h2 style="color:#ffff;text-align:center; font-family:'Open Sans', sans-serif; font-weight: lighter; line-height: 120%;" class="aboutTitleVisible">Technologies</h2>
             </div>
         </div>
         <div class="card-container">
@@ -509,6 +321,57 @@
   <script src="js/list.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/skills.js"></script>
+  <script>
+    
+  class ProjectComponent extends HTMLElement {
+
+    constructor() {
+        super();
+        this.name= this.getAttribute("name");
+        this.description = this.getAttribute("description");
+        this.img = this.getAttribute("img")
+        this.technologies = this.getAttribute("technologies")
+        this.repo = this.getAttribute("repo")
+        this.deployed = this.getAttribute("deployed")
+        this.id = this.getAttribute("id")
+
+    }
+
+      
+      connectedCallback() {
+        this.innerHTML = `
+        <header class="header">
+                        <h4 class="h h3">${this.name}</h4>
+                        <label class="close-button" for=${this.id}>&times;</label>
+        </header>
+        <main class="main">
+                        <img src=${this.img} width="auto" height="250px" class="project-image">
+                        <h5 class="h">Description:</h5>
+                        <p>
+                          ${this.description}
+                        </p>
+                        <h5 class="h">Technologies:</h5>
+                        <p>
+                          ${this.technologies}
+                        </p>
+
+                        ${this.repo && `<a class="project-button" href=${this.repo} target="_blank">
+                          <i class="fas fa-code-branch"></i>
+                          Repo
+                        </a>`}
+
+                        ${this.deployed && `<a class="project-button" href=${this.deployed} target="_blank">
+                          <i class="far fa-eye"></i>
+                          Demo
+                        </a>`
+                        }       
+        </main>
+        `;
+      }
+    }
+
+customElements.define('project-component', ProjectComponent);
+  </script>
 </body>
 
 </html>

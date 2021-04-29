@@ -1,6 +1,6 @@
 //https://codepen.io/peterhry/pen/CutrA
 // Increments the delay on each item.
-$('.rolldown-list li').each(function () {
+$('.rolldown-list label li').each(function () {
     var delay = ($(this).index() / 4) + 's';
     $(this).css({
       webkitAnimationDelay: delay,
