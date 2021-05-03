@@ -207,15 +207,14 @@ input[type="button"].icon:before,
   overflow-x: hidden;
   border: none;
   position: relative;
-  top: 20px;
-  width: 82% !important;
-  max-width: 82% !important;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  
   background: #fff;
   border-radius: .25em .25em .4em .4em;
-  text-align: center;
+
+  height: 100%;
+
   box-shadow: none;
   -webkit-transform: translateY(-40px);
   -moz-transform: translateY(-40px);
@@ -230,12 +229,6 @@ input[type="button"].icon:before,
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s;
-}
-
-.cd-popup-container p {
-  margin: 0;
-  padding: 3em 1em;
-  padding-top: 1em;
 }
 
 .cd-popup-container .cd-popup-close {

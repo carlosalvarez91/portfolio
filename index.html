@@ -108,9 +108,8 @@
         <h2>Projects</h2>
         <div class="media-grid">
             <!--rolldown list https://codepen.io/peterhry/pen/CutrA-->
-            <ul class="rolldown-list" id="myList">
-              
-              <label for="lightbox-0">
+            <ul class="rolldown-list" id="myList">              
+              <label onclick="openModal(0)">
                 <li>
                   Servook 
                     <span class="projects-icons-container">
@@ -122,7 +121,7 @@
                     </span>
                 </li>
               </label>
-              <label for="lightbox-1">
+              <label onclick="openModal(1)">
                 <li>
                   Hostel PMS 
                     <span class="projects-icons-container">
@@ -131,9 +130,7 @@
                     </span>
                 </li>
               </label>
-                <!--<li><label for="lightbox-2">Github jobs searcher <span class="projects-icons-container"><img class="project-icon" src="images/aurelia.png"><img class="project-icon" src="images/materialize.png"></span></label></li>
-                <li><label for="lightbox-3">Google images searcher<span class="projects-icons-container"><img class="project-icon" src="images/python.png"></span></label></li>-->
-              <label for="lightbox-4">
+              <label onclick="openModal(4)" >
                 <li>
                   Babylon 
                     <span class="projects-icons-container">
@@ -144,9 +141,7 @@
                     </span>
                 </li>
               </label>
-                <!--<li><label for="lightbox-5">React twitter clone <span class="projects-icons-container"><img class="project-icon" src="images/react.svg"><img class="project-icon" src="images/firebase.png"></span></label></li>
-                <li><label for="lightbox-6">My Passwords <span class="projects-icons-container"><img class="project-icon" src="images/mongo.png"><img class="project-icon" src="images/express.png"><img class="project-icon" src="images/angular-icon-1.svg"><img class="project-icon" src="images/node.png"></span></label></li>-->
-              <label for="lightbox-7"> 
+              <label onclick="openModal(7)"> 
                 <li>
                   Commuter
                     <span class="projects-icons-container">
@@ -157,7 +152,7 @@
                   
                 </li>
               </label>
-              <label for="lightbox-8">
+              <label onclick="openModal(9)">
                 <li>
                   Socket IO chat
                     <span class="projects-icons-container">
@@ -170,88 +165,111 @@
             </ul>
             <!--lightboxes https://codepen.io/marionebl/pen/fensm-->
             <!--Project 0-->
-            <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-0" />
-                    <article class="content" style="overflow-y: scroll;">
-                      <project-component
-                      name="Servook"
-                      img="images/app.servook.com_.png"
-                      technologies="React, Apollo, GraphQL, Django, Graphene, Postgres, Celery, AWS SES (email) and S3 (storage), Firebase Cloud Messages, WebSockets, Nginx, Supervisor, Daphne."
-                      description="A platform for booking professionals in your area"
-                      deployed="https://app.servook.com"
-                      repo=""
-                      id="lightbox-0"
-                      ></project-component>
-                    </article>
-                    <label class="backdrop" for="lightbox-0"></label>
-            </aside>
+            <div class="cd-popup" id="lightbox-0" role="alert">
+
+                <div class="cd-popup-container">
+                    <p>
+                      <a href="" class="cd-popup-close cd-close-button">
+                        <i class="fa fa-times" style="pointer-events:none;"></i>
+                      </a>
+                    </p>
+
+                    <project-component
+                    name="Servook"
+                    img="images/app.servook.com_.png"
+                    technologies="React, Apollo, GraphQL, Django, Graphene, Postgres, Celery, AWS SES (email) and S3 (storage), Firebase Cloud Messages, WebSockets, Nginx, Supervisor, Daphne."
+                    description="A platform for booking professionals in your area"
+                    deployed="https://app.servook.com"
+                    repo=""
+                    id="lightbox-0"
+                    ></project-component>
+                </div>
+
+            </div>
 
             <!--Project 1-->
-            <aside class="lightbox">
-                <input type="checkbox" class="state" id="lightbox-1" />
-                    <article class="content" style="overflow-y: scroll;">
-                        <project-component
-                        name="Hostel Property Managment system"
-                        img="images/checkin_electron.jpeg"
-                        technologies="Electron, SQLite"
-                        description="A desktop application built in Electron to manage and print the receipts for Backpackers Citi Hostel Dublin."
-                        deployed=""
-                        repo="https://github.com/carlosalvarez91/electron-hostel-app"
-                        id="lightbox-1"
-                        ></project-component>
-                    </article>
-                <label class="backdrop" for="lightbox-1"></label>
-            </aside>
+            <div class="cd-popup" id="lightbox-1" role="alert">
+
+                <div class="cd-popup-container">
+                    <p>
+                      <a href="" class="cd-popup-close cd-close-button">
+                        <i class="fa fa-times" style="pointer-events:none;"></i>
+                      </a>
+                    </p>
+
+                    <project-component
+                    name="Hostel Property Managment system"
+                    img="images/checkin_electron.jpeg"
+                    technologies="Electron, SQLite"
+                    description="A desktop application built in Electron to manage and print the receipts for Backpackers Citi Hostel Dublin."
+                    deployed=""
+                    repo="https://github.com/carlosalvarez91/electron-hostel-app"
+                    id="lightbox-1"
+                    ></project-component>
+                </div>
+            </div>
 
             <!--Project 4-->
-            <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-4" />
-                    <article class="content" style="overflow-y: scroll;">
-                        <project-component
-                        name="Babylon"
-                        img="images/babylon_UI.jpeg"
-                        technologies="KeystoneJS (CMS) built on top of ExpressJS, MongoDB, Pug, Sass"
-                        description="Babylon is a platform for finding information about 'places to go' or classifieds or events at any city in the world."
-                        deployed="https://babylon-dev.herokuapp.com"
-                        repo="https://github.com/babylondublin/Babylon2"
-                        id="lightbox-4"
-                        ></project-component>
-                    </article>
-                    <label class="backdrop" for="lightbox-4"></label>
-            </aside>
+            <div class="cd-popup" id="lightbox-4" role="alert">
+                <div class="cd-popup-container">
+                    <p>
+                      <a href="" class="cd-popup-close cd-close-button">
+                        <i class="fa fa-times" style="pointer-events:none;"></i>
+                      </a>
+                    </p>
+                    <project-component
+                    name="Babylon"
+                    img="images/babylon_UI.jpeg"
+                    technologies="KeystoneJS (CMS) built on top of ExpressJS, MongoDB, Pug, Sass"
+                    description="Babylon is a platform for finding information about 'places to go' or classifieds or events at any city in the world."
+                    deployed="https://babylon-dev.herokuapp.com"
+                    repo="https://github.com/babylondublin/Babylon2"
+                    id="lightbox-4"
+                    ></project-component>
+                </div>
+            </div>
+
   
             <!--Project 7-->
-            <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-7" />
-                    <article class="content" style="overflow-y: scroll;">
-                        <project-component
-                        name="Commuter"
-                        img="images/commuter_UI.png"
-                        technologies="Loopback, Ionic, Arduino"
-                        description="Mobile payment application for the transport using NFC. Built in Ionic Framework (AngularJS), Loopback (NodeJS) as a Back-end and Arduino as a simulation of Transport payment machine."
-                        deployed=""
-                        repo="https://github.com/carlosalvarez91/Commuter"
-                        id="lightbox-7"
-                        ></project-component>
-                    </article>
-                    <label class="backdrop" for="lightbox-7"></label>
-            </aside>
+            <div class="cd-popup" id="lightbox-7" role="alert">
+                <div class="cd-popup-container">
+                    <p>
+                      <a href="" class="cd-popup-close cd-close-button">
+                        <i class="fa fa-times" style="pointer-events:none;"></i>
+                      </a>
+                    </p>
+                    <project-component
+                    name="Commuter"
+                    img="images/commuter_UI.png"
+                    technologies="Loopback, Ionic, Arduino"
+                    description="Mobile payment application for the transport using NFC. Built in Ionic Framework (AngularJS), Loopback (NodeJS) as a Back-end and Arduino as a simulation of Transport payment machine."
+                    deployed=""
+                    repo="https://github.com/carlosalvarez91/Commuter"
+                    id="lightbox-7"
+                    ></project-component>
+                </div>
+            </div>
+
             <!--Project 9-->
-            <aside class="lightbox">
-                    <input type="checkbox" class="state" id="lightbox-8" />
-                    <article class="content" style="overflow-y: scroll;">
-                        <project-component
-                        name="Socket IO Chat"
-                        img="images/IO_chat.png"
-                        technologies="Express, Socket IO, Jquery"
-                        description="A simple chat using WebSockets"
-                        deployed="https://hidden-dusk-75892.herokuapp.com/"
-                        repo="https://github.com/carlosalvarez91/Socket-Web-Chat-App"
-                        id="lightbox-8"
-                        ></project-component>
-                    </article>
-                    <label class="backdrop" for="lightbox-7"></label>
-            </aside>
+
+            <div class="cd-popup" id="lightbox-9" role="alert">
+                <div class="cd-popup-container">
+                    <p>
+                      <a href="" class="cd-popup-close cd-close-button">
+                        <i class="fa fa-times" style="pointer-events:none;"></i>
+                      </a>
+                    </p>
+                    <project-component
+                    name="Socket IO Chat"
+                    img="images/IO_chat.png"
+                    technologies="Express, Socket IO, Jquery"
+                    description="A simple chat using WebSockets"
+                    deployed="https://hidden-dusk-75892.herokuapp.com/"
+                    repo="https://github.com/carlosalvarez91/Socket-Web-Chat-App"
+                    id="lightbox-9"
+                    ></project-component>
+                </div>
+            </div>
         </div>
       </section>
     </main>
@@ -321,6 +339,7 @@
   <script src="js/list.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/skills.js"></script>
+  <script src="js/modal.js"></script>
   <script>
     
   class ProjectComponent extends HTMLElement {
@@ -340,12 +359,10 @@
       
       connectedCallback() {
         this.innerHTML = `
-        <header class="header">
-                        <h4 class="h h3">${this.name}</h4>
-                        <label class="close-button" for=${this.id}>&times;</label>
-        </header>
-        <main class="main">
+
+        <div class="modal-container">
                         <img src=${this.img} width="auto" height="250px" class="project-image">
+                        <h4 class="h h3">${this.name}</h4>
                         <h5 class="h">Description:</h5>
                         <p>
                           ${this.description}
