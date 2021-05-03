@@ -233,10 +233,11 @@ input[type="button"].icon:before,
 
 .cd-popup-container .cd-popup-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 30px;
+  right: 30px;
   width: 30px;
   height: 30px;
+  font-size: 45px;
 }
 
 .cd-close-button {
