@@ -116,8 +116,17 @@
         <h2>Projects</h2>
         <div class="media-grid">
             <!--rolldown list https://codepen.io/peterhry/pen/CutrA-->
-            <ul class="rolldown-list" id="myList">              
+            <ul class="rolldown-list" id="myList">    
               <label onclick="openModal(0)">
+                    <li>
+                      Mapbox GL
+                        <span class="projects-icons-container">
+                          <img class="project-icon" src="images/mapbox_logo.svg">
+                        </span>
+                    </li>
+              </label>
+
+              <label onclick="openModal(1)">
                 <li>
                   Servook 
                     <span class="projects-icons-container">
@@ -129,7 +138,7 @@
                     </span>
                 </li>
               </label>
-              <label onclick="openModal(1)">
+              <label onclick="openModal(2)">
                 <li>
                   Hostel PMS 
                     <span class="projects-icons-container">
@@ -138,7 +147,7 @@
                     </span>
                 </li>
               </label>
-              <label onclick="openModal(4)" >
+              <label onclick="openModal(3)" >
                 <li>
                   Babylon 
                     <span class="projects-icons-container">
@@ -149,7 +158,7 @@
                     </span>
                 </li>
               </label>
-              <label onclick="openModal(7)"> 
+              <label onclick="openModal(4)"> 
                 <li>
                   Commuter
                     <span class="projects-icons-container">
@@ -160,7 +169,7 @@
                   
                 </li>
               </label>
-              <label onclick="openModal(9)">
+              <label onclick="openModal(5)">
                 <li>
                   Socket IO chat
                     <span class="projects-icons-container">
@@ -169,20 +178,31 @@
                     </span>
                 </li>
               </label>
-              <label onclick="openModal(10)">
-                <li>
-                  Beer tinder
-                    <span class="projects-icons-container">
-                      <img class="project-icon" src="images/react.svg">
-                      <img class="project-icon" src="images/firebase.png">
-                    </span>
-                </li>
-              </label>
 
             </ul>
             <!--lightboxes https://codepen.io/marionebl/pen/fensm-->
-            <!--Project 0-->
-            <div class="cd-popup" id="lightbox-0" role="alert">
+
+          <!--Project 0-->
+          <div class="cd-popup" id="lightbox-0" role="alert">
+              <div class="cd-popup-container">
+                  <p>
+                    <a href="" class="cd-popup-close cd-close-button">
+                      <i class="fa fa-times" style="pointer-events:none;"></i>
+                    </a>
+                  </p>
+                  <project-component
+                  name="Mapbox GL"
+                  img="images/mapboxgl.png"
+                  technologies="Mapbox, SketchUp"
+                  description="Georeferenced 3D floorplan overlayed on top of a map"
+                  deployed="https://mapboxgl_3d.surge.sh/"
+                  repo="https://github.com/carlosalvarez91/mapbox-gl-indoor"
+                  id="lightbox-0"
+                  ></project-component>
+              </div>
+          </div>
+            <!--Project 1-->
+            <div class="cd-popup" id="lightbox-1" role="alert">
 
                 <div class="cd-popup-container">
                     <p>
@@ -198,14 +218,14 @@
                     description="A platform for booking professionals in your area"
                     deployed="https://app.servook.com"
                     repo=""
-                    id="lightbox-0"
+                    id="lightbox-1"
                     ></project-component>
                 </div>
 
             </div>
 
-            <!--Project 1-->
-            <div class="cd-popup" id="lightbox-1" role="alert">
+            <!--Project 2-->
+            <div class="cd-popup" id="lightbox-2" role="alert">
 
                 <div class="cd-popup-container">
                     <p>
@@ -221,13 +241,13 @@
                     description="A desktop application built in Electron to manage and print the receipts for Backpackers Citi Hostel Dublin."
                     deployed=""
                     repo="https://github.com/carlosalvarez91/electron-hostel-app"
-                    id="lightbox-1"
+                    id="lightbox-2"
                     ></project-component>
                 </div>
             </div>
 
-            <!--Project 4-->
-            <div class="cd-popup" id="lightbox-4" role="alert">
+            <!--Project 3-->
+            <div class="cd-popup" id="lightbox-3" role="alert">
                 <div class="cd-popup-container">
                     <p>
                       <a href="" class="cd-popup-close cd-close-button">
@@ -241,14 +261,14 @@
                     description="Babylon is a platform for finding information about 'places to go' or classifieds or events at any city in the world."
                     deployed="https://babylon-dev.herokuapp.com"
                     repo="https://github.com/babylondublin/Babylon2"
-                    id="lightbox-4"
+                    id="lightbox-3"
                     ></project-component>
                 </div>
             </div>
 
   
-            <!--Project 7-->
-            <div class="cd-popup" id="lightbox-7" role="alert">
+            <!--Project 4-->
+            <div class="cd-popup" id="lightbox-4" role="alert">
                 <div class="cd-popup-container">
                     <p>
                       <a href="" class="cd-popup-close cd-close-button">
@@ -262,13 +282,13 @@
                     description="Mobile payment application for the transport using NFC. Built in Ionic Framework (AngularJS), Loopback (NodeJS) as a Back-end and Arduino as a simulation of Transport payment machine."
                     deployed=""
                     repo="https://github.com/carlosalvarez91/Commuter"
-                    id="lightbox-7"
+                    id="lightbox-4"
                     ></project-component>
                 </div>
             </div>
 
-            <!--Project 9-->
-            <div class="cd-popup" id="lightbox-9" role="alert">
+            <!--Project 5-->
+            <div class="cd-popup" id="lightbox-5" role="alert">
                 <div class="cd-popup-container">
                     <p>
                       <a href="" class="cd-popup-close cd-close-button">
@@ -282,30 +302,11 @@
                     description="A simple chat using WebSockets"
                     deployed="https://hidden-dusk-75892.herokuapp.com/"
                     repo="https://github.com/carlosalvarez91/Socket-Web-Chat-App"
-                    id="lightbox-9"
+                    id="lightbox-5"
                     ></project-component>
                 </div>
             </div>
 
-            <!--Project 10-->
-            <div class="cd-popup" id="lightbox-10" role="alert">
-                <div class="cd-popup-container">
-                    <p>
-                      <a href="" class="cd-popup-close cd-close-button">
-                        <i class="fa fa-times" style="pointer-events:none;"></i>
-                      </a>
-                    </p>
-                    <project-component
-                    name="Beer tinder"
-                    img="images/beer-tinder.png"
-                    technologies="React, Firebase"
-                    description="A Tinder for beer. Swipe right if you like the beer you see, left if you don´t like it"
-                    deployed="https://beer-tinder-23eef.web.app/"
-                    repo="https://github.com/carlosalvarez91/beer-tinder"
-                    id="lightbox-10"
-                    ></project-component>
-                </div>
-            </div>
         </div>
       </section>
     </main>
