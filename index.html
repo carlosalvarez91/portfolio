@@ -117,9 +117,20 @@
         <div class="media-grid">
             <!--rolldown list https://codepen.io/peterhry/pen/CutrA-->
             <ul class="rolldown-list" id="myList">    
+                <label onclick="openModal(5)">
+                    <li>
+                      3D Meeting Room
+                        <span class="projects-icons-container">
+                          <img class="project-icon" src="images/express.png">
+                          <img class="project-icon" src="images/socketio.svg">
+                          <img class="project-icon" src="images/webrtc.png">
+                          <img class="project-icon" src="images/three.png">
+                        </span>
+                    </li>
+                  </label>
               <label onclick="openModal(0)">
                     <li>
-                      Indoor 3D Map
+                      3D Building
                         <span class="projects-icons-container">
                           <img class="project-icon" src="images/mapbox_logo.svg">
                         </span>
@@ -169,19 +180,28 @@
                   
                 </li>
               </label>
-              <label onclick="openModal(5)">
-                <li>
-                  Socket IO chat
-                    <span class="projects-icons-container">
-                      <img class="project-icon" src="images/express.png">
-                      <img class="project-icon" src="images/socketio.svg">
-                    </span>
-                </li>
-              </label>
-
             </ul>
             <!--lightboxes https://codepen.io/marionebl/pen/fensm-->
 
+            <!--Project 5-->
+            <div class="cd-popup" id="lightbox-5" role="alert">
+              <div class="cd-popup-container">
+                  <p>
+                    <a href="" class="cd-popup-close cd-close-button">
+                      <i class="fa fa-times" style="pointer-events:none;"></i>
+                    </a>
+                  </p>
+                  <project-component
+                  name="3D Meeting Room"
+                  img="images/3D-meeting-room.png"
+                  technologies="Express, Socket IO, WebRTC, Three.js"
+                  description="A 3D meeting room forked from  https://github.com/AidanNelson/threejs-webrtc, re structured and cleaned code and integrated SpriteText (username on top of the box)"
+                  deployed="https://meeting-room-3d.herokuapp.com/"
+                  repo="https://github.com/carlosalvarez91/threejs-webrtc"
+                  id="lightbox-5"
+                  ></project-component>
+              </div>
+          </div>
           <!--Project 0-->
           <div class="cd-popup" id="lightbox-0" role="alert">
               <div class="cd-popup-container">
@@ -191,7 +211,7 @@
                     </a>
                   </p>
                   <project-component
-                  name="Indoor 3D Map"
+                  name="3D Building"
                   img="images/mapboxgl_3d.surge.sh_.png"
                   technologies="Mapbox, SketchUp"
                   description="Georeferenced 3D floorplan overlayed on top of a map"
@@ -286,27 +306,6 @@
                     ></project-component>
                 </div>
             </div>
-
-            <!--Project 5-->
-            <div class="cd-popup" id="lightbox-5" role="alert">
-                <div class="cd-popup-container">
-                    <p>
-                      <a href="" class="cd-popup-close cd-close-button">
-                        <i class="fa fa-times" style="pointer-events:none;"></i>
-                      </a>
-                    </p>
-                    <project-component
-                    name="Socket IO Chat"
-                    img="images/IO_chat.png"
-                    technologies="Express, Socket IO, Jquery"
-                    description="A simple chat using WebSockets"
-                    deployed="https://hidden-dusk-75892.herokuapp.com/"
-                    repo="https://github.com/carlosalvarez91/Socket-Web-Chat-App"
-                    id="lightbox-5"
-                    ></project-component>
-                </div>
-            </div>
-
         </div>
       </section>
     </main>
