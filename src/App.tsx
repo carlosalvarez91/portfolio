@@ -32,7 +32,7 @@ const App = () => {
               />
               <span className='text-xl font-bold'>Carlos Álvarez</span>
 
-              <Card className='p-0 w-11/12 sm:w-[480px] flex flex-col items-start'>
+              <Card className='p-0 w-11/12 sm:w-[450px] flex flex-col items-start'>
                   <div className='px-6 py-3 flex flex-row justify-between items-center w-full border-b-2 border-border'>
                     <span className='text-xl font-bold'>About</span>
                     <div className='flex flex-row gap-3'>
@@ -44,7 +44,7 @@ const App = () => {
                       </a>
                     </div>
                   </div>
-                  <div className='flex flex-col text-sm font-semibold  gap-3 items-start p-6 pr-2'>
+                  <div className='w-full flex flex-col text-xs sm:text-sm font-normal  gap-3 items-start p-6 pr-2'>
                     <span>
                       🦄 &nbsp; 50% Frontend 35% Backend 15% UX.
                     </span>
