@@ -101,6 +101,7 @@ const App = () => {
               <Avatar
               imageUrl='./yo.png' 
               />
+              <span className='text-xl font-bold'>Carlos Álvarez</span>
 
               <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-between'>
                 <Button onClick={()=>setIsContactModalActive(true)} >Contact Me</Button>
@@ -129,7 +130,7 @@ const App = () => {
                     🌏 &nbsp; Remote only.
                   </span>
 
-                  <div className='flex flex-row gap-3 absolute bottom-3 right-3'>
+                  <div className='flex flex-row gap-3 absolute bottom-4 right-4'>
                     <a href='https://github.com/carlosalvarez91'  target='_blank' rel='noreferrer'>
                     <GithubIcon />
                     </a>
