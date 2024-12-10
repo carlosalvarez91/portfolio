@@ -39,7 +39,7 @@ module.exports = {
         heading: '700',
       },
       animation: {
-        'background-shimmer': 'background-shimmer 20s linear infinite',
+        'background-shimmer': 'background-shimmer 40s linear infinite',
       },
       keyframes: {
         'background-shimmer': {
