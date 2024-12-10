@@ -138,10 +138,11 @@ const App = () => {
               </div>
 
               <Modal active={isContactModalActive} setActive={setIsContactModalActive}>
-                <div className='flex flex-col gap-2 w-full'>
-                  <Input value={emailValue} setValue={setEmailValue} placeholder='Email' />
+                <div className='flex flex-col gap-2 w-full items-center'>
+                  <Input className='w-full' value={emailValue} setValue={setEmailValue} placeholder='Email' />
                   <Textarea value={textValue} setValue={setTextValue} placeholder='Type your message here' />
                   <Button
+                  className='w-20 flex justify-center'
                   disabled={!emailValue || !textValue || loading}
                   onClick={async () => {
                     setLoading(true);
