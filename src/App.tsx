@@ -45,6 +45,22 @@ const projects: ProjectType[] = [
     githubUrl: 'https://github.com/carlosalvarez91/timezone-converter'
   },
   {
+    imgUrl: 'gitlab-job-notifier.png',
+    title: 'Gitlab Job Notifier',
+    description: 'Chrome extension for Gitlab CI/CD Pipeline. It observes the current job and it will notify you when it changes the state to success or failure.',
+    technologies: [ 'JS'],
+    deployUrl: 'https://chromewebstore.google.com/detail/abjeghbndlapiblmkekepkmhmcooidbe/preview?hl=en-GB&authuser=0',
+    githubUrl: 'https://github.com/carlosalvarez91/gitlab-job-notifier'
+  },
+  {
+    imgUrl: 'backpackers_pms.jpeg',
+    title: 'Hostel PMS',
+    description: 'A desktop application for managing and and printing receipts for Backpackers Citi Hostel Dublin. ',
+    technologies: ['Electron', 'SQLite'],
+    deployUrl: '',
+    githubUrl: 'https://github.com/carlosalvarez91/electron-hostel-app'
+  },
+  {
     imgUrl: './3D-meeting-room.png',
     title: '3D Classroom',
     description: <span>A 3D virtual space forked from <a className='underline' href='https://github.com/AidanNelson/threejs-webrtc' target='_blank' rel="noreferrer">here</a> as a starting point in a hackathon project for <a className='underline' href='https://www.gostudent.org/' target='_blank' rel="noreferrer"> GoStudent.</a></span>,
@@ -59,22 +75,6 @@ const projects: ProjectType[] = [
     technologies: ['Mapbox', 'Sketch Up'],
     deployUrl: 'https://mapboxgl_3d.surge.sh/',
     githubUrl: 'https://github.com/carlosalvarez91/mapbox-gl-indoor'
-  },
-  {
-    imgUrl: 'gitlab-job-notifier.png',
-    title: 'Gitlab Job Notifier',
-    description: 'Chrome extension for Gitlab CI/CD Pipeline Job, it will notify you when the current job finishes.',
-    technologies: [ 'JS'],
-    deployUrl: 'https://chromewebstore.google.com/detail/abjeghbndlapiblmkekepkmhmcooidbe/preview?hl=en-GB&authuser=0',
-    githubUrl: 'https://github.com/carlosalvarez91/gitlab-job-notifier'
-  },
-  {
-    imgUrl: 'backpackers_pms.jpeg',
-    title: 'Hostel PMS',
-    description: 'A desktop application for managing and and printing receipts for Backpackers Citi Hostel Dublin. ',
-    technologies: ['Electron', 'SQLite'],
-    deployUrl: '',
-    githubUrl: 'https://github.com/carlosalvarez91/electron-hostel-app'
   },
   {
     imgUrl: 'commuter.png',
@@ -94,7 +94,8 @@ const App = () => {
   const [emailValue, setEmailValue] = useState('');
   const [loading, setLoading] = useState(false);
 
-  return <div className='flex flex-col gap-5 w-full bg-[radial-gradient(#80808080_1px,transparent_1px)] [background-size:16px_16px]'>
+  return <div className='flex flex-col gap-5 w-full bg-[radial-gradient(#80808080_1px,transparent_1px)] [background-size:16px_16px] 
+  animate-background-shimmer bg-fixed bg-center overflow-hidden relative'>
            {/* Profile */}
            <div className='flex flex-col gap-5 w-full pt-20 items-center'>
 

@@ -38,8 +38,16 @@ module.exports = {
         base: '500',
         heading: '700',
       },
+      animation: {
+        'background-shimmer': 'background-shimmer 20s linear infinite',
+      },
+      keyframes: {
+        'background-shimmer': {
+          '0%': { backgroundPosition: '0 0' },
+          '100%': { backgroundPosition: '100% 100%' },
+        }
+      }
     },
   },
   plugins: [],
 }
-
