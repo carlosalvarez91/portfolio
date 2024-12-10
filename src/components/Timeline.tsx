@@ -24,7 +24,6 @@ const Event: React.FC<{
       className={`flex items-center w-full ${
         index % 2 === 0 ? 'flex-row-reverse' : ''
       }`}
-      onClick={() => setIsExperienceModalActive(true)}
     >
       {/* Timeline Dot */}
       <div className='absolute w-4 h-4 bg-black rounded-full left-1/2 transform -translate-x-1/2'></div>
@@ -33,6 +32,7 @@ const Event: React.FC<{
       <div 
         className={`w-[165px] sm:w-[240px] p-2 bg-white border-2 border-border shadow-light cursor-pointer
         ${index % 2 === 0 ? 'mr-auto' : 'ml-auto'}`}
+        onClick={() => setIsExperienceModalActive(true)}
       >
         <h3 className='text-sm font-bold text-gray-800'>{event.company} - {event.title}</h3>
         <p className='text-sm text-gray-600'>{event.year}</p>
