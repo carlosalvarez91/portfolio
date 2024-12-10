@@ -112,8 +112,8 @@ const App = () => {
                   window.open('https://buymeacoffee.com/carlosalvarez13')
                 }} >Buy me a coffee &nbsp; 🫶</Button>
               </div>
-              <Card className='p-0 w-11/12 sm:w-[480px] flex flex-col jusrtify-between text-sm font-semibold  gap-3 items-start'>
-                  <div className='px-6 py-3 flex flex-row gap-3 w-full border-b-2 border-border'>
+              <Card className='p-0 w-11/12 sm:w-[480px] flex flex-col items-start'>
+                  <div className='px-6 py-3 flex flex-row justify-between items-center w-full border-b-2 border-border'>
                     <span className='text-xl font-bold'>About</span>
                     <div className='flex flex-row gap-3'>
                       <a href='https://github.com/carlosalvarez91'  target='_blank' rel='noreferrer'>
