@@ -31,7 +31,7 @@ const Event: React.FC<{
       
       {/* Event Box */}
       <div 
-        className={`w-[180px] sm:w-[240px] p-2 bg-white border-2 border-border shadow-light cursor-pointer
+        className={`w-[165px] sm:w-[240px] p-2 bg-white border-2 border-border shadow-light cursor-pointer
         ${index % 2 === 0 ? 'mr-auto' : 'ml-auto'}`}
       >
         <h3 className='text-sm font-bold text-gray-800'>{event.company} - {event.title}</h3>
@@ -50,9 +50,9 @@ const Event: React.FC<{
 
 const Timeline: React.FC<TimelineProps> = ({ events }) => {
   return (
-    <div className='w-full max-w-[390px] sm:max-w-[520px] mx-auto relative py-5'>
+    <div className='w-full max-w-[365px] sm:max-w-[520px] mx-auto relative py-5'>
       {/* Central Line */}
-      <div className='absolute h-[315px] sm:h-60 w-1 bg-gray-800 left-1/2 transform -translate-x-1/2'></div>
+      <div className='absolute h-[330px] sm:h-64 w-1 bg-gray-800 left-1/2 transform -translate-x-1/2'></div>
       
       {/* Timeline Events */}
       <div className='space-y-1 relative'>

@@ -9,7 +9,7 @@ export const experiences: TimelineEvent[] = [
       description: <div className='flex flex-col gap-4'>
                  <span>EdTech Unicorn, GoStudent provides one to one online tutoring.</span>
                   <ul className='space-y-2'>
-                    <li>● Lead frontend implementation of Self booking flow, a micro-frontend app for booking a trial lesson that helps replace sales, the entry point of thousands of leads.</li>
+                    <li>● Initiated frontend implementation of Self booking flow, a micro-frontend app for parents to book a trial lesson without involving sales reps in the process. This is entry point of thousands of leads.</li>
                     <li>● Developed most of the components of an internal UI library using Tailwind and TS.</li>
                     <li>● Refactored internal Sales app.</li>
                     <li>● Front End tech stack: React with TypeScript, Redux, Tailwind css, testing with Jest.</li>
@@ -25,9 +25,10 @@ export const experiences: TimelineEvent[] = [
                     <span>Danalto is a low-power IoT platform which provides high-accuracy positioning intelligence services across large open
                     environments.</span>
                     <ul className='space-y-2'>
-                      <li>● Responsible for implementing new features in Asset Management cloud platform.</li>
-                      <li>● Responsible for researching, prototyping and implementing new features in Asset Management cloud platform.</li>
-                      <li>● Writing decoders for dierent types of sensors.</li>
+                      <li>● Responsible for researching, prototyping and implementing Asset Tracking dashboards and API’s, including geofence editor, location history among other features.</li>
+                      <li>● Responsible for prototyping and implementing a mobile app (PWA) for installing devices.</li>
+                      <li>● Maintenance and implementation of new features in Asset Management cloud platform.</li>
+                      <li>● Writing decoders for different types of sensors.</li>
                       <li>● Rotating the role of Scrum Master.</li>
                       <li>● Using Gitlab CI/CD Pipeline with dierent stages: static code analysis, unit & integration testing, deploy.</li>
                       <li>● Tech stack: React, Django, Celery, Postgres, InuxDB, Kafka, Docker, AWS (EC2, CloudWatch, S3, Lambda, etc)</li>

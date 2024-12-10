@@ -132,7 +132,7 @@ const App = () => {
 
                   </div>
                   </div>
-                  <p className='mt-5 font-semibold'>Contact me to see more projects.</p>
+                  <p className='mt-5 font-semibold'>👉 &nbsp;<span className='underline cursor-pointer' onClick={()=>setIsContactModalActive(true)}>Contact me</span> to see more.</p>
             </div>
 
     </div>
