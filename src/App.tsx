@@ -111,8 +111,8 @@ const App = () => {
                   window.open('https://buymeacoffee.com/carlosalvarez13')
                 }} >Buy me a coffee &nbsp; 🫶</Button>
               </div>
-
               <Card className=' w-11/12 sm:w-[480px] p-6 pr-2 flex flex-col text-sm font-semibold  gap-3 items-start'>
+                  <span className='text-xl font-bold'>About</span>
                   <span>
                     🦄 &nbsp; 50% Frontend 35% Backend 15% UX.
                   </span>
