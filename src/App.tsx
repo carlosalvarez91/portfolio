@@ -97,18 +97,21 @@ const App = () => {
   return <div className='flex flex-col gap-5 w-full bg-[radial-gradient(#80808080_1px,transparent_1px)] [background-size:16px_16px]'>
            {/* Profile */}
            <div className='flex flex-col gap-5 w-full pt-20 items-center'>
+
               <Avatar
               imageUrl='./yo.png' 
               />
-               <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-between'>
+
+              <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-between'>
                 <Button onClick={()=>setIsContactModalActive(true)} >Contact Me</Button>
                 <Button onClick={()=>{
                   window.open('https://drive.google.com/uc?id=1hMh1wI-nfIcghD6VTN-Vd4g2deJopKnD&export=download', '_blank')
                 }} >Download CV</Button>
                 <Button onClick={()=>{
                   window.open('https://buymeacoffee.com/carlosalvarez13')
-                }} >Buy me a coffee</Button>
+                }} >Buy me a coffee &nbsp; 🫶</Button>
               </div>
+
               <Card className=' w-11/12 sm:w-[480px] p-6 pr-2 flex flex-col text-sm font-semibold  gap-3 items-start'>
                   <span>
                     🦄 &nbsp; 50% Frontend 35% Backend 15% UX.
@@ -130,12 +133,11 @@ const App = () => {
                     <a href='https://github.com/carlosalvarez91'  target='_blank' rel='noreferrer'>
                     <GithubIcon />
                     </a>
-                    <a href='https://www.linkedin.com/in/carlosalvarez91/'  target='_blank' rel='noreferrer'>
+                    <a href='https://www.linkedin.com/in/carlos-alvarez91/'  target='_blank' rel='noreferrer'>
                     <LinkedInIcon />
                     </a>
                   </div>
               </Card>
-
 
               <Modal active={isContactModalActive} setActive={setIsContactModalActive}>
                 <div className='flex flex-col gap-2 w-full items-center'>
@@ -190,7 +192,7 @@ const App = () => {
 
               </div>
               </div>
-              <p className='mt-5'>Contact me to see more projects.</p>
+              <p className='mt-5 font-semibold'>Contact me to see more projects.</p>
           </div>
 
     </div>
