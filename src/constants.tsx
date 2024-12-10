@@ -113,7 +113,7 @@ export const experiences: TimelineEvent[] = [
     {
       imgUrl: 'backpackers_pms.jpeg',
       title: 'Hostel PMS',
-      description: 'A desktop application for managing and and printing receipts for Backpackers Citi Hostel Dublin. ',
+      description: 'A desktop application for managing and printing receipts for Backpackers Citi Hostel Dublin. ',
       technologies: ['Electron', 'SQLite'],
       deployUrl: '',
       githubUrl: 'https://github.com/carlosalvarez91/electron-hostel-app'

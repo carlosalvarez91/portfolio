@@ -63,14 +63,14 @@ const App = () => {
                   </div>
               </Card>
 
-              <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-between'>
+              <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-center'>
                 <Button onClick={()=>setIsContactModalActive(true)} >Contact Me</Button>
                 <Button onClick={()=>{
                   window.open('https://drive.google.com/uc?id=1hMh1wI-nfIcghD6VTN-Vd4g2deJopKnD&export=download', '_blank')
                 }} >Download CV</Button>
-                <Button onClick={()=>{
+                {/* <Button onClick={()=>{
                   window.open('https://buymeacoffee.com/carlosalvarez13')
-                }} >Buy me a coffee &nbsp; 🫶</Button>
+                }} >Buy me a coffee &nbsp; 🫶</Button> */}
               </div>
 
               <Modal active={isContactModalActive} setActive={setIsContactModalActive}>
