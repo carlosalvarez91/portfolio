@@ -10,16 +10,16 @@ export const experiences: TimelineEvent[] = [
                  <span>EdTech Unicorn, GoStudent provides one to one online tutoring.</span>
                   <ul className='space-y-2'>
                     <li>● Initiated frontend implementation of Self booking flow, a micro-frontend app for parents to book a trial lesson without involving sales reps in the process. This is entry point of thousands of leads.</li>
-                    <li>● Developed most of the components of an internal UI library using Tailwind and TS.</li>
+                    <li>● Developed most of the components of an internal UI library.</li>
                     <li>● Refactored internal Sales app.</li>
-                    <li>● Front End tech stack: React with TypeScript, Redux, Tailwind css, testing with Jest.</li>
+                    <li>● Front End tech stack: React with TypeScript, Redux, Tailwind, testing with Jest.</li>
                     <li>● Use of DataDog for monitoring, Firebase events, Optimizely for A/B testing, Storybook for internal UI library.</li>
                   </ul>
                   </div>
   },
   { 
       year: 'Sept 2019 - Apr 2022', 
-      title: 'Software Developer', 
+      title: 'Software Engineer', 
       company: 'Danalto', 
       description: <div className='flex flex-col gap-4'>
                     <span>Danalto is a low-power IoT platform which provides high-accuracy positioning intelligence services across large open
@@ -30,7 +30,7 @@ export const experiences: TimelineEvent[] = [
                       <li>● Maintenance and implementation of new features in Asset Management cloud platform.</li>
                       <li>● Writing decoders for different types of sensors.</li>
                       <li>● Rotating the role of Scrum Master.</li>
-                      <li>● Using Gitlab CI/CD Pipeline with dierent stages: static code analysis, unit & integration testing, deploy.</li>
+                      <li>● Using Gitlab CI/CD Pipeline with different stages: static code analysis, unit & integration testing, deploy.</li>
                       <li>● Tech stack: React, Django, Celery, Postgres, InuxDB, Kafka, Docker, AWS (EC2, CloudWatch, S3, Lambda, etc)</li>
                     </ul>
                   </div> 
@@ -38,15 +38,14 @@ export const experiences: TimelineEvent[] = [
   { 
       year: 'Jan 2018 - Aug 2019', 
       title: 'Full Stack Developer', 
-      company: 'VISUM', 
+      company: 'Visum', 
       description: <div className='flex flex-col gap-4'>
-                    <span>VISUM is part of IRIS Technology Group, based at University College Dublin, specialising in developing bespoke Quality
-                    Control improvement solutions across the Food, Pharma and Chemical sectors.</span>
+                    <span>
+                      Visum is a brand of IRIS Technology Group. We manufacture and integrate real-time and turnkey solutions for Industry with NIR and Raman spectroscopy, Artificial Vision and other photonic techniques such as fluorescence and hyperspectral imaging. 
+                    </span>
                     <ul className='space-y-2'>
-                      <li>● Responsible for iteratively implementing new features in dierent Industrial IoT products.</li>
-                      <li>● Participated in many dierent European with dierent teams (Sharebox, Agrimax, Workdeck, Visum Cloud,
-                        MyToolBox)</li>
-                      <li>● Using SCRUM methodology, GIT and linux environment</li>
+                      <li>● Iteratively implementing new features in different Industrial IoT products.</li>
+                      <li>● Participated in some EU funded projects: Sharebox, Agrimax, Workdeck, Visum Cloud, MyToolBox</li>
                       <li>● Tech stack: Angular, Django / Falcon / Node JS (Depending on the project), Maria DB, PostgreSQL, Docker</li>
                     </ul>
                   </div> 
@@ -59,8 +58,7 @@ export const experiences: TimelineEvent[] = [
                     <span>Multicultural community. Helps migrants integrate into Irish life. Info, articles, radio and events. Celebrating Cultures,
                     Promoting Integration.</span>
                     <ul className='space-y-2'>
-                      <li>● Responsible for the development of the website.</li>
-                      <li>● Migrated from Wordpress to KeystoneJS, a CMS based in Node, Express JS, MongoDB, Pug and Less.</li>
+                      <li>● Built from scratch a replica of the existing BabylonRadio website using KeystoneJS, a CMS based in Node, Express JS, MongoDB, Pug and Less.</li>
                       <li>● Strong communication and feedback within all team members and stakeholders.</li>
                       <li>● Using Agile methodologies - Iteratively analysing, designing, implementing and testing.</li>
                     </ul>
