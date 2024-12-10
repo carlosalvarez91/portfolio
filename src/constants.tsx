@@ -9,7 +9,7 @@ export const experiences: TimelineEvent[] = [
       description: <div className='flex flex-col gap-4'>
                  <span>EdTech Unicorn, GoStudent provides one to one online tutoring.</span>
                   <ul className='space-y-2'>
-                    <li>● Initiated frontend implementation of Self booking flow, a micro-frontend app for parents to book a trial lesson without involving sales reps in the process. This is entry point of thousands of leads.</li>
+                    <li>● Initiated frontend implementation of Self booking flow, a micro-frontend app for parents to book a trial lesson without involving sales reps in the process. This is the entry point of thousands of leads.</li>
                     <li>● Developed most of the components of an internal UI library.</li>
                     <li>● Refactored internal Sales app.</li>
                     <li>● Front End tech stack: React with TypeScript, Redux, Tailwind, testing with Jest.</li>

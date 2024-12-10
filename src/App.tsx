@@ -66,7 +66,7 @@ const App = () => {
               <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-center'>
                 <Button onClick={()=>setIsContactModalActive(true)} >Contact Me</Button>
                 <Button onClick={()=>{
-                  window.open('https://drive.google.com/uc?id=1hMh1wI-nfIcghD6VTN-Vd4g2deJopKnD&export=download', '_blank')
+                  window.open('https://drive.google.com/uc?id=10ScRcsvIdy_6TT6WYlsx3hjxItk1mr4k&export=download', '_blank')
                 }} >Download CV</Button>
                 {/* <Button onClick={()=>{
                   window.open('https://buymeacoffee.com/carlosalvarez13')
