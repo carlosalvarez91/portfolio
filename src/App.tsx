@@ -100,7 +100,7 @@ const App = () => {
               <Avatar
               imageUrl='./yo.png' 
               />
-               <div className='flex flex-row gap-2 w-full justify-center px-5'>
+               <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-between'>
                 <Button onClick={()=>setIsContactModalActive(true)} >Contact Me</Button>
                 <Button onClick={()=>{
                   window.open('https://drive.google.com/uc?id=1hMh1wI-nfIcghD6VTN-Vd4g2deJopKnD&export=download', '_blank')
@@ -108,7 +108,6 @@ const App = () => {
                 <Button onClick={()=>{
                   window.open('https://buymeacoffee.com/carlosalvarez13')
                 }} >Buy me a coffee</Button>
-
               </div>
               <Card className=' w-11/12 sm:w-[480px] p-6 pr-2 flex flex-col text-sm font-semibold  gap-3 items-start'>
                   <span>
