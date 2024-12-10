@@ -112,31 +112,34 @@ const App = () => {
                   window.open('https://buymeacoffee.com/carlosalvarez13')
                 }} >Buy me a coffee &nbsp; 🫶</Button>
               </div>
-              <Card className=' w-11/12 sm:w-[480px] p-6 pr-2 flex flex-col text-sm font-semibold  gap-3 items-start'>
-                  <span className='text-xl font-bold'>About</span>
-                  <span>
-                    🦄 &nbsp; 50% Frontend 35% Backend 15% UX.
-                  </span>
-                  <span>
-                    💻 &nbsp; Over 6 years of experience in the EdTech and IoT Industry.
-                  </span>
-                  <span>
-                    ✅ &nbsp; Strong skills in React, Django, Postgres, InfluxDB, etc.
-                  </span>
-                  <span>
-                    🚀 &nbsp; Passionate about contributing to innovative startups.
-                  </span>
-                  <span>
-                    🌏 &nbsp; Remote only.
-                  </span>
-
-                  <div className='flex flex-row gap-3 absolute bottom-4 right-4'>
-                    <a href='https://github.com/carlosalvarez91'  target='_blank' rel='noreferrer'>
-                    <GithubIcon />
-                    </a>
-                    <a href='https://www.linkedin.com/in/carlos-alvarez91/'  target='_blank' rel='noreferrer'>
-                    <LinkedInIcon />
-                    </a>
+              <Card className='p-0 w-11/12 sm:w-[480px] flex flex-col jusrtify-between text-sm font-semibold  gap-3 items-start'>
+                  <div className='px-6 py-3 flex flex-row gap-3 w-full border-b-2 border-border'>
+                    <span className='text-xl font-bold'>About</span>
+                    <div className='flex flex-row gap-3'>
+                      <a href='https://github.com/carlosalvarez91'  target='_blank' rel='noreferrer'>
+                      <GithubIcon />
+                      </a>
+                      <a href='https://www.linkedin.com/in/carlos-alvarez91/'  target='_blank' rel='noreferrer'>
+                      <LinkedInIcon />
+                      </a>
+                    </div>
+                  </div>
+                  <div className='flex flex-col text-sm font-semibold  gap-3 items-start p-6 pr-2'>
+                    <span>
+                      🦄 &nbsp; 50% Frontend 35% Backend 15% UX.
+                    </span>
+                    <span>
+                      💻 &nbsp; Over 6 years of experience in the EdTech and IoT Industry.
+                    </span>
+                    <span>
+                      ✅ &nbsp; Strong skills in React, Django, Postgres, InfluxDB, etc.
+                    </span>
+                    <span>
+                      🚀 &nbsp; Passionate about contributing to innovative startups.
+                    </span>
+                    <span>
+                      🌏 &nbsp; Remote only.
+                    </span>
                   </div>
               </Card>
 
