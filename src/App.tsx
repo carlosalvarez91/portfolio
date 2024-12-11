@@ -32,10 +32,10 @@ const App = () => {
               />
               <span className='text-xl font-bold'>Carlos Álvarez</span>
 
-              <Card className='p-0 w-11/12 sm:w-[450px] flex flex-col items-start'>
+              <Card className='p-0 w-11/12 sm:w-[520px] flex flex-col items-start'>
                   <div className='px-6 py-3 flex flex-row justify-between items-center w-full border-b-2 border-border'>
                     <span className='text-xl font-bold'>About</span>
-                    <div className='flex flex-row gap-3'>
+                    <div className='flex flex-row gap-4'>
                       <a href='https://github.com/carlosalvarez91'  target='_blank' rel='noreferrer'>
                       <GithubIcon />
                       </a>
@@ -44,7 +44,7 @@ const App = () => {
                       </a>
                     </div>
                   </div>
-                  <div className='w-full flex flex-col text-xs sm:text-sm font-normal  gap-3 items-start p-6 pr-2'>
+                  <div className='w-full flex flex-col text-xs sm:text-sm font-normal sm:font-semibold gap-3 items-start p-4 sm:p-6 pr-2'>
                     <span>
                       🦄 &nbsp; 50% Frontend 35% Backend 15% UX.
                     </span>
