@@ -69,11 +69,11 @@ export const experiences: TimelineEvent[] = [
   
   export const projects: ProjectType[] = [
     {
-      imgUrl: './work-in-progress.png',
-      title: 'DigitalNomap',
-      description: 'A digital nomad community platform.',
-      technologies: ['React Native', 'Firebase'],
-      deployUrl: '',
+      imgUrl: './nomap.png',
+      title: 'Nomap',
+      description: 'A tool for creating awareness of other nomads around while traveling by having a geolocalized chat room, creating events, etc.',
+      technologies: ['React Native', 'Firebase', 'Landing page in Next.js'],
+      deployUrl: 'https://digitalnomap.com',
       githubUrl: ''
     },
     {
