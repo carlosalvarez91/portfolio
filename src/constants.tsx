@@ -69,20 +69,21 @@ export const experiences: TimelineEvent[] = [
   
   export const projects: ProjectType[] = [
     {
-      imgUrl: './nomap.png',
-      title: 'Nomap',
-      description: 'A tool for creating awareness of other nomads around while traveling by having a geolocalized chat room, creating events, etc.',
-      technologies: ['React Native', 'Firebase', 'Landing page in Next.js'],
-      deployUrl: 'https://digitalnomap.com',
-      githubUrl: ''
+      imgUrl: './roiexplorer.gif',
+      title: 'ROI Explorer  ',
+      description: 'A tool exploring ROI and other relevant metrics for real estate investors. Data post-processed from Idealista listings.',
+      technologies: ['Next.js', 'Supabase (Postgres)', 'Python'],
+      deployUrl: 'https://roiexplorer.com',
+      githubUrl: 'https://github.com/carlosalvarez91/roiexplorer'
     },
+
     {
       imgUrl: './servook.png',
       title: 'Servook',
       description:"A platform for connecting with local professionals. Iterated and pivoted along the way from an initial concept of an 'App for booking Barbers' to a 'multi service, on demand, Uber-like platform' and finally simplified it to a 'Local services marketplace'.",
       technologies: ["React", "Apollo", "GraphQL", "Django", "Graphene", "Postgres", "Celery", "AWS SES (email) and S3 (storage)", "Firebase Cloud Messages", "WebSockets", "Nginx", "Supervisor", "Daphne"],
       deployUrl: 'https://servook.com',
-      githubUrl: ''
+      githubUrl: 'https://github.com/carlosalvarez91/servook'
     },
     {
       imgUrl: 'standup-timer.png',
@@ -93,13 +94,14 @@ export const experiences: TimelineEvent[] = [
       githubUrl: 'https://github.com/carlosalvarez91/standup-timer'
     },
     {
-      imgUrl: './timezone-converter.png',
-      title: 'Timezone Converter',
-      description: <span><p>A tool to convert between timezones, e.g: I have a meeting at 9:00 AM in New York, but I want to know what time that is in Bangkok. </p> <p>It uses the <a className='underline' href='https://momentjs.com/timezone/' target='_blank' rel="noreferrer">moment-timezone</a> library to handle timezone conversions. </p> <p>It also uses the <a className='underline' href='https://docs.mapbox.com/mapbox-gl-js/api/' target='_blank' rel="noreferrer">mapbox-gl </a>library to display a map of the world with timezones highlighted. </p> <p>The geojson data that is used to display the timezones map is taken from <a className='underline' href='https://github.com/evansiroky/timezone-boundary-builder' target='_blank' rel="noreferrer">timezone-boundary-builder </a>and I also use <a className='underline' href='https://www.npmjs.com/package/countries-and-timezones' target='_blank' rel="noreferrer">countries-and-timezones</a> library to query timezone data.</p></span>,
-      technologies: ['React', 'Mapbox'],
-      deployUrl: 'https://timezone-converter.surge.sh/',
-      githubUrl: 'https://github.com/carlosalvarez91/timezone-converter'
+      imgUrl: './nomap.png',
+      title: 'Nomap',
+      description: 'A tool for creating awareness of other nomads around while traveling by having a geolocalized chat room, creating events, etc.',
+      technologies: ['React Native', 'Firebase', 'Landing page in Next.js'],
+      deployUrl: 'https://digitalnomap.com',
+      githubUrl: 'https://github.com/carlosalvarez91/digitalnomap'
     },
+
     {
       imgUrl: 'gitlab-job-notifier.png',
       title: 'Gitlab Job Notifier',
@@ -108,13 +110,14 @@ export const experiences: TimelineEvent[] = [
       deployUrl: 'https://chromewebstore.google.com/detail/abjeghbndlapiblmkekepkmhmcooidbe/preview?hl=en-GB&authuser=0',
       githubUrl: 'https://github.com/carlosalvarez91/gitlab-job-notifier'
     },
+
     {
-      imgUrl: 'backpackers_pms.jpeg',
-      title: 'Hostel PMS',
-      description: 'A desktop application for managing and printing receipts for Backpackers Citi Hostel Dublin. ',
-      technologies: ['Electron', 'SQLite'],
-      deployUrl: '',
-      githubUrl: 'https://github.com/carlosalvarez91/electron-hostel-app'
+      imgUrl: './timezone-converter.png',
+      title: 'Timezone Converter',
+      description: <span><p>A tool to convert between timezones, e.g: I have a meeting at 9:00 AM in New York, but I want to know what time that is in Bangkok. </p> <p>It uses the <a className='underline' href='https://momentjs.com/timezone/' target='_blank' rel="noreferrer">moment-timezone</a> library to handle timezone conversions. </p> <p>It also uses the <a className='underline' href='https://docs.mapbox.com/mapbox-gl-js/api/' target='_blank' rel="noreferrer">mapbox-gl </a>library to display a map of the world with timezones highlighted. </p> <p>The geojson data that is used to display the timezones map is taken from <a className='underline' href='https://github.com/evansiroky/timezone-boundary-builder' target='_blank' rel="noreferrer">timezone-boundary-builder </a>and I also use <a className='underline' href='https://www.npmjs.com/package/countries-and-timezones' target='_blank' rel="noreferrer">countries-and-timezones</a> library to query timezone data.</p></span>,
+      technologies: ['React', 'Mapbox'],
+      deployUrl: 'https://timezone-converter.surge.sh/',
+      githubUrl: 'https://github.com/carlosalvarez91/timezone-converter'
     },
     {
       imgUrl: './3D-meeting-room.png',
@@ -139,5 +142,13 @@ export const experiences: TimelineEvent[] = [
       technologies: [ 'Loopback', 'Ionic', 'Arduino'],
       deployUrl: '',
       githubUrl: 'https://github.com/carlosalvarez91/Commuter'
+    },
+    {
+      imgUrl: 'backpackers_pms.jpeg',
+      title: 'Hostel PMS',
+      description: 'A desktop application for managing and printing receipts for Backpackers Citi Hostel Dublin. ',
+      technologies: ['Electron', 'SQLite'],
+      deployUrl: '',
+      githubUrl: 'https://github.com/carlosalvarez91/electron-hostel-app'
     },
   ]

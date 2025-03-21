@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { app, analytics } from "./firebase";
 import Avatar from './components/Avatar';
 import Card from './components/Card';
@@ -28,7 +28,7 @@ const App = () => {
            <div className='flex flex-col gap-5 w-full pt-20 items-center'>
 
               <Avatar
-              imageUrl='./yo.png' 
+              imageUrl='./profile.jpg' 
               />
               <span className='text-xl font-bold'>Carlos Álvarez</span>
 
