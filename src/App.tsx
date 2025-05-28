@@ -46,7 +46,7 @@ const App = () => {
                   </div>
                   <div className='w-full flex flex-col text-xs sm:text-sm font-normal sm:font-semibold gap-3 items-start p-4 sm:p-6 pr-2'>
                     <span>
-                      🦄 &nbsp; 50% Frontend 35% Backend 15% UX.
+                      🦄 &nbsp; Engineer who can design - 50% Frontend 35% Backend 15% UX.
                     </span>
                     <span>
                       💻 &nbsp; Over 6 years of experience in the EdTech and IoT Industry.

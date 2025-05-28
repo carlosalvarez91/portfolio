@@ -9,11 +9,14 @@ export const experiences: TimelineEvent[] = [
       description: <div className='flex flex-col gap-4'>
                  <span>EdTech Unicorn, GoStudent provides one to one online tutoring.</span>
                   <ul className='space-y-2'>
-                    <li>● Initiated frontend implementation of Self booking flow, a micro-frontend app for parents to book a trial lesson without involving sales reps in the process. This is the entry point of thousands of leads.</li>
-                    <li>● Developed most of the components of an internal UI library.</li>
-                    <li>● Refactored internal Sales app.</li>
-                    <li>● Front End tech stack: React with TypeScript, Redux, Tailwind, testing with Jest.</li>
-                    <li>● Use of DataDog for monitoring, Firebase events, Optimizely for A/B testing, Storybook for internal UI library.</li>
+                    <li>● Led frontend development of Self-Booking Flow, a micro-frontend app enabling parents to book trial lessons independently from Sales. Achieving CAC -10% and Customer Acquisition +5%. Mentored Junior dev, onboarded 2 devs.</li>
+                    <li>● Launched over 10 A/B test variants across the Self-Booking flow to optimize UX and conversion. Involved in architectural decisions to reduce tech debt and keep balance between speed and quality.</li>
+                    <li>● Optimized Sales App by refactoring API calls, reducing search latency by 40% and enhancing workflow efficiency for 2,000+ sales reps.</li>
+                    <li>● Developed and maintained an internal UI library, standardizing design across multiple projects.</li>
+                    <li>● Collaborated directly with the CTO to implement the Self Checkout micro frontend in Next with Stripe.</li>
+                    <li>● Implementation of Waiting Room micro frontend in Remix.</li>
+                    <li>● Front End tech stack: React with TypeScript, Redux, and Tailwind CSS, unit tests with Jest and E2E with Playwright.</li>
+                    <li>● Monitored crashes and UX analytics using DataDog, used Firebase events, A/B testing with Optimizely and Storybook for internal UI library.</li>
                   </ul>
                   </div>
   },
@@ -25,13 +28,16 @@ export const experiences: TimelineEvent[] = [
                     <span>Danalto is a low-power IoT platform which provides high-accuracy positioning intelligence services across large open
                     environments.</span>
                     <ul className='space-y-2'>
-                      <li>● Responsible for researching, prototyping and implementing Asset Tracking dashboards and API’s, including geofence editor, location history among other features.</li>
+                      <li>● Led research of GIS solutions to build custom dashboards. Implemented a generic Asset Tracking dashboard in React and API in Django rest framework, reading geospatial data from InfluxDB.  Geofencing and historical positioning data were part of the dashboard among other features.</li>
+                      <li>● Exposure to telecommunications engineering, acquiring general knowledge on LoRa 2.4GH, UWB, BLE and multilateration algorithms to locate assets by using a minimum infrastructure of at least 3 Anchors 1 Tag and 1 gateway.</li>
                       <li>● Responsible for prototyping and implementing a mobile app (PWA) for installing devices.</li>
-                      <li>● Maintenance and implementation of new features in Asset Management cloud platform.</li>
+                      <li>● Maintenance and performance improvements on Operations dashboard to monitor key IoT stats like device battery, lost messages vs Ideal messages based on keep alive frequencies, Gateway status, etc.</li>
                       <li>● Writing decoders for different types of sensors.</li>
                       <li>● Rotating the role of Scrum Master.</li>
                       <li>● Using Gitlab CI/CD Pipeline with different stages: static code analysis, unit & integration testing, deploy.</li>
-                      <li>● Tech stack: React, Django, Celery, Postgres, InuxDB, Kafka, Docker, AWS (EC2, CloudWatch, S3, Lambda, etc)</li>
+                      <li>● Used AWS to manage EC2 instances per environment, monitored via CloudWatch, processed device data with Lambda functions, and stored device installation images in S3.</li> 
+                      <li>● Used Grafana dashboards for monitoring Kafka cluster and RabbitMQ queue to ingest incoming kafka messages.</li>
+                      <li>● Tech stack: React, Django, Celery, Postgres, DynamoDB,InfluxDB, Kafka, RabbitMQ, Docker, EC2, Lambda, SQS and S3.</li>
                     </ul>
                   </div> 
   },
@@ -41,11 +47,10 @@ export const experiences: TimelineEvent[] = [
       company: 'Visum', 
       description: <div className='flex flex-col gap-4'>
                     <span>
-                      Visum is a brand of IRIS Technology Group. We manufacture and integrate real-time and turnkey solutions for Industry with NIR and Raman spectroscopy, Artificial Vision and other photonic techniques such as fluorescence and hyperspectral imaging. 
-                    </span>
+                    VISUM is part of IRIS Technology Group, based at University College Dublin, specialising in developing bespoke Quality Control improvement solutions across the Food, Pharma and Chemical sectors.                    </span>
                     <ul className='space-y-2'>
-                      <li>● Iteratively implementing new features in different Industrial IoT products.</li>
-                      <li>● Participated in some EU funded projects: Sharebox, Agrimax, Workdeck, Visum Cloud, MyToolBox</li>
+                      <li>● Collaborated on EU-funded projects: Sharebox, Agrimax, Workdeck, MyToolBox. </li>
+                      <li>● Developed scalable dashboard (Visum Cloud) for real-time sensor monitoring for DairyGold – Milk factory in Ireland.</li>
                       <li>● Tech stack: Angular, Django / Falcon / Node JS (Depending on the project), Maria DB, PostgreSQL, Docker</li>
                     </ul>
                   </div> 
@@ -71,8 +76,8 @@ export const experiences: TimelineEvent[] = [
     {
       imgUrl: './roiexplorer.gif',
       title: 'ROI Explorer  ',
-      description: 'A tool exploring ROI and other relevant metrics for real estate investors. Data post-processed from Idealista listings.',
-      technologies: ['Next.js', 'Supabase (Postgres)', 'Python'],
+      description: 'ROI Explorer helps real estate investors visualize key metrics, calculate ROI, and get AI-powered insights to find profitable properties.',
+      technologies: ['Next.js', 'Supabase (Postgres)', 'Python', 'Deepseek V3'],
       deployUrl: 'https://roiexplorer.com',
       githubUrl: 'https://github.com/carlosalvarez91/roiexplorer'
     },
@@ -96,7 +101,7 @@ export const experiences: TimelineEvent[] = [
     {
       imgUrl: './nomap.png',
       title: 'Nomap',
-      description: 'A tool for creating awareness of other nomads around while traveling by having a geolocalized chat room, creating events, etc.',
+      description: 'Digital Nomap helps you to connect with other Nomads while travelling, by providing a geolocalized chat room.',
       technologies: ['React Native', 'Firebase', 'Landing page in Next.js'],
       deployUrl: 'https://digitalnomap.com',
       githubUrl: 'https://github.com/carlosalvarez91/digitalnomap'
