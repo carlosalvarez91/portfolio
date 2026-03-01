@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { app, analytics } from "./firebase";
 import Avatar from './components/Avatar';
 import Card from './components/Card';
 import Project from './components/Project';
@@ -15,8 +14,6 @@ import { experiences, projects } from './constants';
 
 
 const App = () => {
-  console.log("Firebase App initialized:", app);
-  console.log("Firebase Analytics initialized:", analytics);
   const [isContactModalActive, setIsContactModalActive] = useState(false);
   const [textValue, setTextValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
@@ -24,118 +21,118 @@ const App = () => {
 
   return <div className='flex flex-col gap-5 w-full bg-[radial-gradient(#80808080_1px,transparent_1px)] [background-size:16px_16px] 
               animate-background-shimmer bg-fixed bg-center overflow-hidden relative'>
-           {/* Profile */}
-           <div className='flex flex-col gap-5 w-full pt-20 items-center'>
+    {/* Profile */}
+    <div className='flex flex-col gap-5 w-full pt-20 items-center'>
 
-              <Avatar
-              imageUrl='./profile.jpg' 
-              />
-              <span className='text-xl font-bold'>Carlos Álvarez</span>
+      <Avatar
+        imageUrl='./profile.jpg'
+      />
+      <span className='text-xl font-bold'>Carlos Álvarez</span>
 
-              <Card className='p-0 w-11/12 sm:w-[520px] flex flex-col items-start'>
-                  <div className='px-6 py-3 flex flex-row justify-between items-center w-full border-b-2 border-border'>
-                    <span className='text-xl font-bold'>About</span>
-                    <div className='flex flex-row gap-4'>
-                      <a href='https://github.com/carlosalvarez91'  target='_blank' rel='noreferrer'>
-                      <GithubIcon />
-                      </a>
-                      <a href='https://www.linkedin.com/in/carlos-alvarez91/'  target='_blank' rel='noreferrer'>
-                      <LinkedInIcon />
-                      </a>
-                    </div>
-                  </div>
-                  <div className='w-full flex flex-col text-xs sm:text-sm font-normal sm:font-semibold gap-3 items-start p-4 sm:p-6 pr-2'>
-                    <span>
-                      🦄 &nbsp; Engineer who can design - 50% Frontend 35% Backend 15% UX.
-                    </span>
-                    <span>
-                      💻 &nbsp; Over 6 years of experience in the EdTech and IoT Industry.
-                    </span>
-                    <span>
-                      ✅ &nbsp; Strong skills in React, Django, Postgres, InfluxDB, etc.
-                    </span>
-                    <span>
-                      🚀 &nbsp; Passionate about contributing to innovative startups.
-                    </span>
-                    <span>
-                      🌏 &nbsp; Remote only.
-                    </span>
-                  </div>
-              </Card>
+      <Card className='p-0 w-11/12 sm:w-[520px] flex flex-col items-start'>
+        <div className='px-6 py-3 flex flex-row justify-between items-center w-full border-b-2 border-border'>
+          <span className='text-xl font-bold'>About</span>
+          <div className='flex flex-row gap-4'>
+            <a href='https://github.com/carlosalvarez91' target='_blank' rel='noreferrer'>
+              <GithubIcon />
+            </a>
+            <a href='https://www.linkedin.com/in/carlos-alvarez91/' target='_blank' rel='noreferrer'>
+              <LinkedInIcon />
+            </a>
+          </div>
+        </div>
+        <div className='w-full flex flex-col text-xs sm:text-sm font-normal sm:font-semibold gap-3 items-start p-4 sm:p-6 pr-2'>
+          <span>
+            🦄 &nbsp; 50% Frontend 35% Backend 15% UX.
+          </span>
+          <span>
+            💻 &nbsp; Over 7 years of experience.
+          </span>
+          <span>
+            ✅ &nbsp; Strong skills in Next.js, Django, Postgres, etc.
+          </span>
+          <span>
+            🚀 &nbsp; Passionate about contributing to innovative products.
+          </span>
+          <span>
+            🌏 &nbsp; Remote only.
+          </span>
+        </div>
+      </Card>
 
-              <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-center'>
-                <Button onClick={()=>setIsContactModalActive(true)} >Contact Me</Button>
-                <Button onClick={()=>{
-                  window.open('https://drive.google.com/uc?id=10ScRcsvIdy_6TT6WYlsx3hjxItk1mr4k&export=download', '_blank')
-                }} >Download CV</Button>
-                {/* <Button onClick={()=>{
+      <div className='flex flex-row gap-2 w-11/12 sm:w-[480px] justify-center'>
+        <Button onClick={() => setIsContactModalActive(true)} >Contact Me</Button>
+        <Button onClick={() => {
+          window.open('https://docs.google.com/document/d/1VzC_Vh2sdzkc-tOugX-gl1TNZUemAT9D&export=download', '_blank')
+        }} >Download CV</Button>
+        {/* <Button onClick={()=>{
                   window.open('https://buymeacoffee.com/carlosalvarez13')
                 }} >Buy me a coffee &nbsp; 🫶</Button> */}
-              </div>
+      </div>
 
-              <Modal active={isContactModalActive} setActive={setIsContactModalActive}>
-                <div className='flex flex-col gap-2 w-full items-center'>
-                  <Input className='w-full' value={emailValue} setValue={setEmailValue} placeholder='Email' />
-                  <Textarea value={textValue} setValue={setTextValue} placeholder='Type your message here' />
-                  <Button
-                  className='w-20 flex justify-center'
-                  disabled={!emailValue || !textValue || loading}
-                  onClick={async () => {
-                    setLoading(true);
-                    try {
-                      const response = await fetch('https://formspree.io/f/mgeronye', {
-                        method: 'POST',
-                        headers: {
-                          'Content-Type': 'application/json',
-                          'Accept': 'application/json'
-                        },
-                        body: JSON.stringify({
-                          email: emailValue,
-                          message: textValue
-                        })
-                      });
+      <Modal active={isContactModalActive} setActive={setIsContactModalActive}>
+        <div className='flex flex-col gap-2 w-full items-center'>
+          <Input className='w-full' value={emailValue} setValue={setEmailValue} placeholder='Email' />
+          <Textarea value={textValue} setValue={setTextValue} placeholder='Type your message here' />
+          <Button
+            className='w-20 flex justify-center'
+            disabled={!emailValue || !textValue || loading}
+            onClick={async () => {
+              setLoading(true);
+              try {
+                const response = await fetch('https://formspree.io/f/mgeronye', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    email: emailValue,
+                    message: textValue
+                  })
+                });
 
-                      if (response.ok) {
-                        setLoading(false);
-                        setEmailValue('');
-                        setTextValue('');
-                        setIsContactModalActive(false);
-                      }
-                    } catch (error) {
-                      setLoading(false);
-                      console.error('Error sending message:', error);
-                      setIsContactModalActive(false);
-                    }
-                  }}
-                  >Send</Button>
-                </div>
-              </Modal>
-           </div>
-           {/* Experience */}
-            <div className='flex flex-col w-full items-center'>
-              <span className='text-xl font-bold'>Experience</span>
-              <Timeline events={experiences} />
-            </div>
-        
-            {/* Projects */}
-            <div className='flex flex-col w-full items-center mb-5'>
-                <span className='text-xl font-bold mb-5'>Projects</span>
-                <div className='flex'>
-                  <div className="masonry sm:masonry-sm md:masonry-md">
-                     {projects.map((e)=>{
-                       return <Project 
-                        key={e.title}
-                        className=" break-inside w-72"
-                        {...e}
-                        />
-                     })}
-
-                  </div>
-                  </div>
-                  <p className='mt-5 font-semibold'>👉 &nbsp;<span className='underline cursor-pointer' onClick={()=>setIsContactModalActive(true)}>Contact me</span> to see more.</p>
-            </div>
-
+                if (response.ok) {
+                  setLoading(false);
+                  setEmailValue('');
+                  setTextValue('');
+                  setIsContactModalActive(false);
+                }
+              } catch (error) {
+                setLoading(false);
+                console.error('Error sending message:', error);
+                setIsContactModalActive(false);
+              }
+            }}
+          >Send</Button>
+        </div>
+      </Modal>
     </div>
+    {/* Experience */}
+    <div className='flex flex-col w-full items-center'>
+      <span className='text-xl font-bold'>Experience</span>
+      <Timeline events={experiences} />
+    </div>
+
+    {/* Projects */}
+    <div className='flex flex-col w-full items-center mb-5'>
+      <span className='text-xl font-bold mb-5'>Projects</span>
+      <div className='flex'>
+        <div className="masonry sm:masonry-sm md:masonry-md">
+          {projects.map((e) => {
+            return <Project
+              key={e.title}
+              className=" break-inside w-72"
+              {...e}
+            />
+          })}
+
+        </div>
+      </div>
+      <p className='mt-5 font-semibold'>👉 &nbsp;<span className='underline cursor-pointer' onClick={() => setIsContactModalActive(true)}>Contact me</span> to see more.</p>
+    </div>
+
+  </div>
 };
 
 export default App;
