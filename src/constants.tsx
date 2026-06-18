@@ -3,7 +3,7 @@ import { TimelineEvent } from "./components/Timeline"
 
 export const experiences: TimelineEvent[] = [
   {
-    year: 'June 2025 - December 2024',
+    year: 'June 2025 - December 2025',
     title: 'Full Stack Developer',
     company: 'The insights company',
     description: <div className='flex flex-col gap-4'>
